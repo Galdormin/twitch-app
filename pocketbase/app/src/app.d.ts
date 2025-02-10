@@ -8,6 +8,8 @@ declare global {
 			pb: PocketBase;
 			id: string;
 			email: string;
+			username: string;
+			twitch_id: number;
 		}
 		// interface PageData {}
 		// interface Platform {}

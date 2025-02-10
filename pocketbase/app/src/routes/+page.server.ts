@@ -2,9 +2,12 @@ import type { Actions, PageServerLoad } from './$types';
 
 export const load = (async ({ locals }) => {
 	const posts = await locals.pb.collection('posts').getFullList();
+	
 	return {
 		id: locals.id,
 		email: locals.email,
+		username: locals.username,
+		twitch_id: locals.twitch_id,
 		posts: posts.map(post => ({
             id: post.id,
             title: post.title,

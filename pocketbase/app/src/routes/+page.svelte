@@ -5,7 +5,7 @@
 </script>
 
 <main class="p-8">
-	<h1 class="text-3xl font-semibold">Welcome to SvelteAuth</h1>
+	<h1 class="text-3xl font-semibold">Welcome {data.username}</h1>
 	<button
 		class="border rounded p-2 mt-10 mb-10 bg-gray-800 text-white hover:bg-gray-700"
 		on:click={() => (window.location.href = '/auth')}

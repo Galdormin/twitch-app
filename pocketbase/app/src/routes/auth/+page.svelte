@@ -7,7 +7,7 @@
 	let form: HTMLFormElement;
 	async function login() {
 		try {
-			await pb.collection('users').authWithOAuth2({ provider: 'github' });
+			await pb.collection('users').authWithOAuth2({ provider: 'twitch' });
 			const input = document.createElement('input');
 			input.type = 'hidden';
 			input.name = 'token';
@@ -23,7 +23,7 @@
 <form method="post" bind:this={form} />
 <button
     on:click={login}
-	class="border rounded p-2 mt-10 bg-gray-800 text-white hover:bg-gray-700"
+	class="border rounded p-2 mt-10 bg-purple-800 text-white hover:bg-purple-700"
 >
-	Login using Github
+	Login using Twitch
 </button>
