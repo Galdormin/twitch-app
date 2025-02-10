@@ -7,9 +7,9 @@ COPY package-lock.json /app/package-lock.json
 
 RUN npm install
 
-COPY . .
+# COPY . .
 
-CMD ["npm", "run", "dev"]
+# CMD ["npm", "run", "dev"]
 
 # Build
 FROM node:19-alpine as build
